@@ -16,3 +16,47 @@ private static void insertie ( int n, int[] v)
             long stop = System.currentTimeMillis();
             System.out.println("Sortarea dureaza:" + (stop - start));
         }
+        
+        
+package com.company;
+
+import java.util.Scanner;
+
+import static java.lang.Thread.sleep;
+
+public class Main {
+
+
+        public static void  insertie_ebinara ( int[] v, int n )
+        {
+            throw InterruptedException;
+            {
+                long start = System.currentTimeMillis();
+                Scanner scan= new Scanner(System.in);
+                int n=scan.nextInt();
+                int i, j, s, d, m, x,y;
+                int[] a = new int[];
+                for (i = 1; i <= n; i++) {
+                        x = a[i];
+                        s = 0;
+                        d = i - 1;
+                        while (s <= d) {
+                            y = (s + d) / 2;
+                            m = y;
+                            if (a[m] > x)
+                                d = m - 1;
+                            else
+                                s = m + 1;
+                        }
+                        for (j = i - 1; j >= s; j--)
+                            a[j + 1] = a[j];
+                        a[s] = x;
+                    }
+
+                System.out.println("Ati ales sa sortati tabloul prin insertie binara");
+                sleep(1);
+                long stop = System.currentTimeMillis();
+                System.out.println("Sortarea dureaza:" + (stop - start));
+            }
+        }
+    }
